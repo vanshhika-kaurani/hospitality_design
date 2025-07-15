@@ -9,7 +9,7 @@ html, body, #root {
 body {
   margin: 0;
   color: #fff;
-  background-color: #734832;
+  font-family: 'Alexandria', sans-serif;
 }
 
 .home {
@@ -125,12 +125,13 @@ body {
   font-size: 8rem;
   margin-top: 6rem;
   padding-top: 6rem;
+  font-weight: 550;
 
   
 }
 
 .home h1 span {
-  color: #FF7F50;
+  color: #CA5D36;
 }
 .arrow{
   margin-top: 10px;
@@ -146,7 +147,6 @@ body {
   position: absolute;
   bottom: 2rem;
   left: 50%;
-  transform: translateX(-50%);
   font-size: 2rem;
   animation: bounce 2s infinite;
   cursor: pointer;
@@ -167,39 +167,32 @@ body {
   background-repeat: no-repeat;
   background-color: #5D230F;
   padding: 100px 20px;
-  color: #fff;
-  text-align: center;
-  min-height: 80vh
+  min-height: 80vh;
 }
 
 
 .section_1 h2 {
   text-Transform: uppercase;
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  background: linear-gradient(to right, #FFECA9, #FFBB70, #ED9455);
+  font-size: 3.5rem;
+  line-height:97%;
+  background: linear-gradient(to bottom ,#E4AD99, #D78669, #D78669, #CA5D36);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-size: 40px;
-  font-weight: bold;
+  display: flex;
+  justify-content: center;  
+  align-items: center;                  
   text-align: center;
+  letter-Spacing: 8px;
   text-transform: uppercase;
-
+   
  }
 
-.section_1 p {
-  max-width: 700px;
-  margin: auto;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.8);
-}
 
 .section_2 {
   background-color: #FFE1D6;
   color: #fff;
-  min-height: 80vh;
+  min-height: 100vh;
   background-image: url('./A3 1.png');
   background-position: center;       
   background-repeat: no-repeat;
@@ -208,37 +201,43 @@ body {
   justify-Content: space-between ;
   padding: 60px 80px ;
   position: relative;
-  min-Height: "100vh";
   background-Size: cover;
   
 }
-.section2-text{
-z-Index: 1; 
-max-Width: 50%;
-}
 
 .section_2 h4{
-  text-Transform: uppercase;
-  opacity: 0.7;
+  letter-spacing: 1;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: none;
+  padding-left: 50px;
+  opacity:0.8;
+  
 }
 
 .section_2 h1{
   font-Size: 64px;
-  color: #ED9455;
-  letter-Spacing: 15px;
+  color:  #ED9455;
+  letter-Spacing: 30px;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 8px;
+
 }
 
 .section_2 P{
-  line-Height: 1.8;
-  font-Size: 16px;
+  line-Height: 1.3;
+  font-Size: 15px;
    margin: 20px 0;
    text-Align: left; 
+   opacity: 0.9;
+   font-weight: 100;
 }
 
 .section_2 a{
   text-Transform: uppercase;
   color: #FFBB70;
-  font-Weight: bold;
   letter-Spacing: 1px;
   text-Decoration: none;
   font-Size: 14px;
@@ -263,6 +262,14 @@ max-Width: 50%;
 
 .section_3 h2{
   text-transform: uppercase;
+   background: linear-gradient(to bottom ,#EBC3B5, #DB9177, #CA5D36);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: flex;
+  justify-content: center;     
+  align-items: flex-end; 
+  text-align: center;
 
 }
 
