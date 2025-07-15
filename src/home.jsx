@@ -11,16 +11,8 @@ const Home = () => {
   return (
     <>
       {/* landing home */}
-      <div
-        className="home"
-        style={{
-          backgroundImage: "url('/shutterstock_1061574436 1 (1).png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          
-        }}
-      >
+      <div className="home" >
+        
         {/* //navbar */}
         <nav className="navbar">
           <div className="nav-left">
@@ -58,46 +50,29 @@ const Home = () => {
               </svg>
             </button>
 
-            <button className="contact-btn">CONTACT US</button>
+            <button className="contact-btn">
+            CONTACT US
+            </button>
+            
           </div>
         </nav>
 
-        {/* //main_content */}
+        {/*main_content*/}
         <h1>
           LIVE THE <span>BEAT</span>
         </h1>
 
         {/* ↓ Down Arrow Scroll Button */}
-        <button
-          onClick={scrollToNextSection}
-          style={{
-            marginTop: "10px",
-            fontSize: "30px",
-            color: "white",
-            cursor: "pointer",
-            outline: "none",
-            border: "none",
-            background: "transparent",
-           
-           
-          }}
-        >
+        <button className="arrow"
+          onClick={scrollToNextSection} >    
           ↓
         </button>
       </div>
 
       {/* Section-1 */}
-      <div
-        className="section_1"
-        id="section_1"
-        style={{
-          backgroundImage: "url('./shutterstock_1054410035 2 (1).png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <h2 className="gradient-text" style={{ textTransform: "uppercase" }}>
+      <div className="section_1" id="section_1">
+
+        <h2 className="gradient-text">
           The world’s first <br />
           musical themed hotel <br />
           that integrates AI, <br />
@@ -106,47 +81,20 @@ const Home = () => {
       </div>
 
       {/* Section-2 */}
-      <div
-        className="section_2"
-        style={{
-          backgroundImage: "url('./A3 1.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          padding: "60px 80px",
-          color: "white",
-          position: "relative",
-          minHeight: "100vh",
-        }}
-      >
-        <div className="section2-text" style={{ zIndex: 1, maxWidth: "50%" }}>
-          <h4 style={{ textTransform: "uppercase", opacity: 0.7 }}>
+      <div className="section_2">
+        <div className="section2-text" >
+          <h4>
             DO HOTELS & RESIDENCES
           </h4>
-          <h1 style={{ fontSize: "64px", color: "#ED9455", letterSpacing: "15px" }}>STORY</h1>
-          <p style={{ lineHeight: "1.8", fontSize: "16px", margin: "20px 0", textAlign: "left" }}>
+          <h1>STORY</h1>
+          <p>
             Every detail here is crafted to create connection <br />
             and inspire creativity. It’s an invitation to live <br />
             boldly, experience the music in every moment, <br />
             embrace the rhythm of life, and truly live the beat.
           </p>
-          <a
-            href="#"
-            style={{
-              textTransform: "uppercase",
-              color: "#FFBB70",
-              fontWeight: "bold",
-              letterSpacing: "1px",
-              textDecoration: "none",
-              fontSize: "14px",
-              
-
-            }}
-          >
-            <span style={{ textDecoration: "underline" }}>Explore</span> More
+          <a href="#">
+            <span className="underline">Explore</span> More
           </a>
         </div>
       </div>
@@ -155,14 +103,9 @@ const Home = () => {
       <div
         className="section_3"
         id="section_3"
-        style={{
-          backgroundImage: "url('./shutterstock_1755911966.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
       >
-        <h2 style={{ textTransform: "uppercase" }}>
+
+        <h2>
           a destination <br />
           where you don’t <br />
           just stay — you feel.
@@ -175,17 +118,12 @@ const Home = () => {
       <div
         className="section_4"
         id="section_4"
-        style={{
-          backgroundImage: "url('./gettyimages-510844956-170667a.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
+        
       >
         <h4 style={{ textTransform: "uppercase", opacity: 0.7 }}>
           DO HOTELS & RESIDENCES
         </h4>
-        <h1 style={{ fontSize: "64px", color: "#ED9455", letterSpacing: "15px" }}>
+        <h1 >
           <span>OUR</span>
           <br /> DEVELOPMENTS
         </h1>
@@ -195,41 +133,23 @@ const Home = () => {
       <div
         className="section_5"
         id="section_5"
-        style={{
-          backgroundImage: "url('./image.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      ></div>
+      >
+
+      </div>
 
       {/* Section-6 */}
-      <div
-        className="section_6"
-        style={{
-          backgroundImage: "url('./derek-story-1Pzhr6XPl6k-unsplash (1).png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <h4 style={{ textTransform: "uppercase", opacity: 0.7 }}>
+      <div className="section_6">
+       
+        <h4 >
           DO HOTELS & RESIDENCES
         </h4>
-        <h1 style={{ fontSize: "64px", color: "#ED9455", letterSpacing: "15px" }}>MEDIA</h1>
+
+        <h1>MEDIA</h1>
       </div>
 
       {/* Section-7 */}
-      <div
-        className="section_7"
-        style={{
-          backgroundImage: "url('./Screenshot 2025-01-29 at 12.58.16 PM (1).png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <h1 style={{ fontSize: "64px", color: "#ED9455", letterSpacing: "15px" }}>MEDIA</h1>
+      <div className="section_7">
+        <h1>MEDIA</h1>
       </div>
 
       {/* Footer */}
