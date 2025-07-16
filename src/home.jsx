@@ -1,12 +1,28 @@
 
 import React from "react";
 import "./styles.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+
 
 const Home = () => {
   const scrollToNextSection = () => {
     const nextSection = document.getElementById("section_1");
     if (nextSection) nextSection.scrollIntoView({ behavior: "smooth" });
+
   };
+
+  const slides = [
+    {
+      image: "/hotel1.png",
+      
+    },
+    {
+      image: "/hotel2.png",
+      
+    },
+  ];
+  
 
   return (
     <>
@@ -120,13 +136,34 @@ const Home = () => {
         id="section_4"
         
       >
-        <h4 style={{ textTransform: "uppercase", opacity: 0.7 }}>
+        <h4>
           DO HOTELS & RESIDENCES
         </h4>
         <h1 >
           <span>OUR</span>
           <br /> DEVELOPMENTS
         </h1>
+       <div className="slider-container">
+  <Swiper
+    spaceBetween={20}
+    slidesPerView={1.4}
+    centeredSlides={true}
+    loop={true}
+    grabCursor={true}
+  >
+    {slides.map((slide, index) => (
+      <SwiperSlide key={index}>
+        <div className="card">
+          <img src={slide.image} alt={`Slide ${index + 1}`} />
+          <div className="overlay">
+            <button className="learn-more-btn">LEARN MORE</button>
+          </div>
+        </div>
+      </SwiperSlide>
+    ))}
+  </Swiper>
+</div>
+
       </div>
 
       {/* Section-5 */}
