@@ -1,0 +1,239 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,h1,h2,h3,h4,h5,p,ul,li{
+     margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+.comm_title{
+    color: rgb(2555,255,255);
+    letter-spacing: 8px;
+    line-height: 97%;
+    text-transform: uppercase;
+}
+
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+header{
+    width: 100%;
+    clear: both;
+    left: 0px;
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+    background: linear-gradient(0deg, rgba(45, 20, 7, 0), rgb(45, 20, 7) 70%);
+    padding: 2em 0px;
+    transition: 0.5s;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.headwrapper{
+        align-items: center;
+        display: flex;
+        width: 100%;
+        float: left;
+        clear: both;
+        position: relative;
+
+}
+nav{
+    align-items: center;
+    display: flex;
+   
+}
+
+.nav_menu{
+    align-items: center;
+    display: flex;
+}
+
+ul{
+        list-style: none;
+}
+
+li{
+    text-align: -webkit-match-parent;
+}
+
+.headMenu ul.dropdown {
+    background-color: White;
+    left: 0px;
+    opacity: 0;
+    top: 120%;
+    transform: translateY(-50px) scale(0);
+    width: 100%;
+    padding: 1em;
+    transition: 0.3s;
+}
+
+.headMenu ul.dropdown > li:not(:last-child) {
+    margin-bottom: 0.3em;
+}
+
+.headMenu ul.dropdown > li {
+    display: flex;
+    float: left;
+    justify-content: center;
+    width: 100%;
+}
+.headmenu nav ul {
+  display: flex;
+  justify-content: flex-end; /* Push items to the right */
+  gap: 20px;
+}
+
+.headMenu > nav > ul > li a {
+    align-items: center;
+    color: var(--black);
+    display: flex;
+    float: left;
+    font-family: var(--primary-font);
+    font-size: var(--body-sub-sub);
+    font-weight: var(--fw-regular);
+    line-height: 24px;
+    position: relative;
+    text-transform: uppercase;
+    gap: 0.5em;
+}
+
+a:link, a:visited {
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    outline: none;
+    text-decoration: none;
+}
+.headLogo {
+    margin-right: auto;
+    max-width: 140px;
+    width: clamp(148px, 23vw, 289px);
+    margin-left: auto !important;
+}
+img{
+max-width: 100%;
+overflow-clip-margin: content-box;
+overflow: clip;
+}
+
+.headbtn{
+    align-items: center;
+    display: flex;
+    color: var(--secondary-color);
+    float: left;
+    font-family: var(--primary-font);
+    font-size: 12px;
+    font-weight: var(--fw-semi-bold);
+    letter-spacing: 3px;
+    line-height: 24px;
+    position: relative;
+    text-transform: uppercase;
+    background: none;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    outline: none;
+}
+
+.banner {
+  background-image: url('/shutterstock_1061574436 1 (1).png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  animation: zoomLoop 12s ease-in-out infinite;
+}
+@keyframes zoomLoop {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 120%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+.section2_wrapper{
+  background-image: url('./shutterstock_1054410035 2 (1).png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #5D230F;
+}
+
+.section3_wrapper{
+  background-image: url('./A3 1.png');
+  background-size: cover;
+  background-position: center;       
+  height: 100vh;
+  width: 100%;
+}
+
+.section4_wrapper{
+  background-image: url('./shutterstock_1755911966.png');
+  background-size: cover;
+  background-position: center;
+   height: 100vh;
+   width: 100%;
+}
+
+.section5_wrapper{
+  background-image: url('./gettyimages-510844956-170667a.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.section6_wrapper{
+  background-image: url('./image.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.section7_wrapper{
+  background-image: url('./derek-story-1Pzhr6XPl6k-unsplash (1).png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+
+.section8_wrapper{
+  background-image: url('./Screenshot 2025-01-29 at 12.58.16 PM (1).png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+
+.footer{
+  background-color: #FFFFFF;
+  padding: 40px 20px;
+  height: 40vh;
+}
